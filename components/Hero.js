@@ -32,7 +32,7 @@ function Hero() {
             <div className="px-4 md:px-10 md:mx-auto mt-10 md:mt-0 flex flex-col justify-center items-start">
                 <div className="flex flex-col gap-2 md:gap-1 relative">
 
-                    <div className="text-[15px] md:text-[16px] lg:text-[18px] text-[#64FFDA] tracking-widest">hello, my
+                    <div className="text-[15px] md:text-[16px] lg:text-[18px] text-[#E76161] tracking-widest">hello, my
                         name is
                     </div>
 
@@ -45,14 +45,14 @@ function Hero() {
                     <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px]">
                         <p>
                             <span>{text}</span>
-                            <Cursor curorColor={"#F7AB0A"}/>
+                            <Cursor curorColor={"#E76161"}/>
                         </p>
 
                     </div>
 
                     <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4">I am a highly motivated and
-                        skilled<strong className="text-[#64FFDA]"> Fullstack Developer
-                        </strong> currently pursuing <strong className="text-[#64FFDA]"> BSc in Software Engineering
+                        skilled<strong className="text-[#E76161]"> Fullstack Developer
+                        </strong> currently pursuing <strong className="text-[#E76161]"> BSc in Software Engineering
                             .</strong>I have
                         experience
                         working with a variety of programming languages and frameworks
@@ -88,59 +88,59 @@ function Hero() {
 
             </div>
 
-            {/*<Particles*/}
-            {/*    id="tsparticles"*/}
-            {/*    init={particlesInit}*/}
-            {/*    loaded={particlesLoaded}*/}
-            {/*    options={{*/}
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
 
-            {/*        background: {*/}
-            {/*            color: {*/}
-            {/*                value: "",*/}
-            {/*            },*/}
-            {/*        }, fpsLimit: 120, interactivity: {*/}
-            {/*            events: {*/}
-            {/*                onClick: {*/}
-            {/*                    enable: true, mode: "push",*/}
-            {/*                }, onHover: {*/}
-            {/*                    enable: true, mode: "repulse",*/}
-            {/*                }, resize: true,*/}
-            {/*            }, modes: {*/}
-            {/*                push: {*/}
-            {/*                    quantity: 4,*/}
-            {/*                }, repulse: {*/}
-            {/*                    distance: 200, duration: 0.4,*/}
-            {/*                },*/}
-            {/*            },*/}
-            {/*        }, particles: {*/}
-            {/*            color: {*/}
-            {/*                value: "#64FFDA",*/}
-            {/*            },*/}
+                    background: {
+                        color: {
+                            value: "",
+                        },
+                    }, fpsLimit: 120, interactivity: {
+                        events: {
+                            onClick: {
+                                enable: true, mode: "push",
+                            }, onHover: {
+                                enable: true, mode: "repulse",
+                            }, resize: true,
+                        }, modes: {
+                            push: {
+                                quantity: 4,
+                            }, repulse: {
+                                distance: 200, duration: 0.4,
+                            },
+                        },
+                    }, particles: {
+                        color: {
+                            value: "#E76161",
+                        },
 
-            {/*            links: {*/}
-            {/*                color: "#99e2e6", distance: 150, enable: true, opacity: 0.3, width: 1,*/}
-            {/*            }, collisions: {*/}
-            {/*                enable: true,*/}
-            {/*            }, move: {*/}
-            {/*                direction: "none", enable: true, outModes: {*/}
-            {/*                    default: "bounce",*/}
-            {/*                }, random: false, speed: 1, straight: false,*/}
-            {/*            }, number: {*/}
-            {/*                density: {*/}
-            {/*                    enable: true, area: 1000,*/}
-            {/*                }, value: 80,*/}
-            {/*            }, opacity: {*/}
-            {/*                value: 0.4,*/}
-            {/*            }, shape: {*/}
-            {/*                type: "circle",*/}
-            {/*            }, size: {*/}
-            {/*                value: {min: 1, max: 5},*/}
-            {/*            },*/}
-            {/*        }, detectRetina: true*/}
+                        links: {
+                            color: "#E76161", distance: 150, enable: true, opacity: 0.2, width: 1,
+                        }, collisions: {
+                            enable: true,
+                        }, move: {
+                            direction: "none", enable: true, outModes: {
+                                default: "bounce",
+                            }, random: false, speed: 1, straight: false,
+                        }, number: {
+                            density: {
+                                enable: true, area: 1000,
+                            }, value: 80,
+                        }, opacity: {
+                            value: 0.4,
+                        }, shape: {
+                            type: "circle",
+                        }, size: {
+                            value: {min: 1, max: 5},
+                        },
+                    }, detectRetina: true
 
 
-            {/*    }}*/}
-            {/*/>*/}
+                }}
+            />
         </div>
 
     );

@@ -19,12 +19,13 @@ function Header() {
                 // animate={{x: 0,opacity:1,scale:1}}
                 // transition={{duration:1.5}}
             >
-                <div className={"border-b-2 border-b-green-500"}><Link
-                    className={" text-sm transition hover:text-[#64FFDA]"} href="#hero">Home</Link></div>
-                <div className={""}><Link className={" text-sm transition hover:text-[#64FFDA]"} href="#about">About</Link></div>
-                <div className={""}><Link className={" text-sm transition hover:text-[#64FFDA]"} href="#portfolio">Portfolio</Link>
+                <div className={"border-b-2 border-b-[#E76161]" }><Link
+                    className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#hero">Home</Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#about">About</Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#skills">Skills</Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#portfolio">Projects</Link>
                 </div>
-                <div className={""}><Link className={" text-sm transition hover:text-[#64FFDA]"} href="#contact">Contact</Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#contact">Contact</Link></div>
 
             </motion.div>
         </header>

@@ -14,7 +14,7 @@ function Projects() {
             <h3 className={"absolute uppercase top-14 text-2xl text-center tracking-[20px]"}>Projects</h3>
 
 
-            <div className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#64FFDA] scrollbar-thin p-10 "}>
+            <div className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
                 <ProjectCard/>
                 <ProjectCard/>
                 <ProjectCard/>
