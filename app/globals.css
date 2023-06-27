@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .contactInput {
+        @apply focus:text-[#64FFDA]/80 hover:border-[#64FFDA]/60  outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4  text-gray-300 placeholder-gray-500 transition-all w-full text-[14px] md:text-[16px] focus:border-[#64FFDA]
+    }
+}
+
 /*:root {*/
 /*  --foreground-rgb: 0, 0, 0;*/
 /*  --background-start-rgb: 214, 219, 220;*/
@@ -76,3 +82,35 @@ body {
     color: white !important;
 
 }
+.contactInput {
+
+}
+.button2 {
+    /*padding: 8px 20px!important;*/
+    backdrop-filter: blur(20px);
+    width:100% !important;
+    display: flex !important;
+
+    align-items: center !important;
+    gap: 8px !important;
+    padding:17px 28px !important;
+    font-size: 17px !important;
+    color: var(--color-bg) !important;
+    background-color: rgba(100,255,218,0.7) !important;
+
+    border-radius: 6px !important;
+
+    margin-right: 10px !important;
+    border: 1.5px solid rgba(100,255,218) !important;
+    transition: all 0.2s ease-in;
+    text-transform: none!important;
+    font-weight: 600;
+    letter-spacing: 3.5px!important;
+
+}
+
+/*.button2:hover {*/
+/*    background-color: rgba(153, 226, 230, 0.2) !important;*/
+/*    color: white !important;*/
+
+/*}*/
