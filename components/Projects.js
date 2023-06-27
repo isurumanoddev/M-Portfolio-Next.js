@@ -10,7 +10,7 @@ function Projects() {
             whileInView={{opacity: 1}}
             transition={{duration: 1.5}}
 
-            className={"min-h-screen mx-auto items-center relative flex flex-col text-center md:text-left md:flex-row max-w-full px-10 justify-evenly"}>
+            className={"min-h-screen mx-auto items-center relative flex flex-col text-center md:text-left md:flex-row max-w-full px-2 justify-evenly"}>
             <h3 className={"absolute uppercase top-14 text-2xl text-center tracking-[20px]"}>Projects</h3>
 
 

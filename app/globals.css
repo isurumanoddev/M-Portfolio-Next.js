@@ -119,3 +119,32 @@ body {
 /*    color: white !important;*/
 
 /*}*/
+
+.button3 {
+    /*padding: 8px 20px!important;*/
+    backdrop-filter: blur(20px);
+    width: max-content !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding:8px 14px !important;
+    font-size: 13px !important;
+    color: var(--color-primary) !important;
+    background-color: transparent !important;
+
+    border-radius: 6px !important;
+
+
+    border: 1.5px solid rgba(100,255,218) !important;
+    transition: all 0.2s ease-in;
+    text-transform: none!important;
+    font-weight: 500;
+    letter-spacing: 2.5px!important;
+
+}
+
+.button3:hover {
+    background-color: rgba(153, 226, 230, 0.2) !important;
+    color: white !important;
+
+}
