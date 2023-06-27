@@ -20,12 +20,11 @@ function Hero() {
     }, []);
 
     const [text, count] = useTypewriter({
-        words:["< I'm a Full Stack Developer />","< I'm an Undergraduate Student />", "< I build things for Web />"],
-        loop:true,
+        words: ["< I'm a Full Stack Developer />", "< I'm an Undergraduate Student />", "< I build things for Web />"],
+        loop: true,
         delaySpeed: 2000,
 
     });
-
 
 
     return (
@@ -33,10 +32,14 @@ function Hero() {
             <div className="px-4 md:px-10 md:mx-auto mt-10 md:mt-0 flex flex-col justify-center items-start">
                 <div className="flex flex-col gap-2 md:gap-1 relative">
 
-                    <div className="text-[15px] md:text-[16px] lg:text-[17px] text-[#64FFDA] tracking-widest">hello, my name is</div>
+                    <div className="text-[15px] md:text-[16px] lg:text-[17px] text-[#64FFDA] tracking-widest">hello, my
+                        name is
+                    </div>
 
 
-                    <div className="pb-1 pt-1 text-[40px] md:text-[50px]  lg:text-[65px] tracking-widest ">Isuru Senanayake</div>
+                    <div className="pb-1 pt-1 text-[40px] md:text-[50px]  lg:text-[65px] tracking-widest ">Isuru
+                        Senanayake
+                    </div>
 
 
                     <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px]">
@@ -45,11 +48,12 @@ function Hero() {
                             <Cursor curorColor={"#F7AB0A"}/>
                         </p>
 
-                   </div>
+                    </div>
 
                     <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4">I am a highly motivated and
                         skilled<strong className="text-[#64FFDA]"> Fullstack Developer
-                        </strong> currently pursuing <strong className="text-[#64FFDA]"> BSc in Software Engineering .</strong>I have
+                        </strong> currently pursuing <strong className="text-[#64FFDA]"> BSc in Software Engineering
+                            .</strong>I have
                         experience
                         working with a variety of programming languages and frameworks
                     </p>
@@ -58,7 +62,7 @@ function Hero() {
 
 
                 <div className="mt-3 flex flex-row gap-3 md:pt-6">
-                    <Button  className="button ">Reach out to me <Send
+                    <Button className="button ">Reach out to me <Send
                         fontSize={"small"}/></Button>
                     {/*<Button id={"download__btn"} className="hidden lg:flex gap-3 text-xs bg-[#64FFDA] tracking-widest text-white border-none outline-none px-7 ">Download Cv <Download*/}
                     {/*    fontSize={"small"}/></Button>*/}
@@ -71,11 +75,11 @@ function Hero() {
                         <GitHub fontSize={"large"}/>
                     </IconButton>
                     <IconButton href={"https://github.com/isurumanoddev"} target="_blank"
-                                  className={"text-white"}>
+                                className={"text-white"}>
                         <LinkedIn fontSize={"large"}/>
                     </IconButton>
                     <IconButton href={"https://github.com/isurumanoddev"} target="_blank"
-                                  className={"text-white"}>
+                                className={"text-white"}>
                         <Twitter fontSize={"large"}/>
                     </IconButton>
 
@@ -83,6 +87,60 @@ function Hero() {
 
 
             </div>
+
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
+
+                    background: {
+                        color: {
+                            value: "",
+                        },
+                    }, fpsLimit: 120, interactivity: {
+                        events: {
+                            onClick: {
+                                enable: true, mode: "push",
+                            }, onHover: {
+                                enable: true, mode: "repulse",
+                            }, resize: true,
+                        }, modes: {
+                            push: {
+                                quantity: 4,
+                            }, repulse: {
+                                distance: 200, duration: 0.4,
+                            },
+                        },
+                    }, particles: {
+                        color: {
+                            value: "#64FFDA",
+                        },
+
+                        links: {
+                            color: "#99e2e6", distance: 150, enable: false, opacity: 0.3, width: 1,
+                        }, collisions: {
+                            enable: true,
+                        }, move: {
+                            direction: "none", enable: true, outModes: {
+                                default: "bounce",
+                            }, random: false, speed: 1, straight: false,
+                        }, number: {
+                            density: {
+                                enable: true, area: 1000,
+                            }, value: 80,
+                        }, opacity: {
+                            value: 0.4,
+                        }, shape: {
+                            type: "circle",
+                        }, size: {
+                            value: {min: 1, max: 5},
+                        },
+                    }, detectRetina: true
+
+
+                }}
+            />
         </div>
 
     );
