@@ -13,7 +13,7 @@ export default function Home() {
             <section id={"about"} className={"snap-center"}>
                 <About/>
             </section>
-            <section id={"about"} className={"snap-center"}>
+            <section id={"portfolio"} className={"snap-center"}>
                 <Portfolio/>
             </section>
 
