@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 function Skill({directionLeft}) {
     return (
-        <div className={"group relative flex cursor-pointer"}>
+        <div className={"group relative flex cursor-pointer "}>
             <motion.img
                 initial={{x: directionLeft ? -200 : 200, opacity: 0}}
                 whileInView={{opacity: 1, x: 0}}

@@ -28,7 +28,7 @@ function Hero() {
 
 
     return (
-        <div className={"h-screen px-4 flex flex-col justify-center max-w-6xl md:mx-auto  "}>
+        <div className={" h-screen px-4 flex flex-col justify-center max-w-6xl md:mx-auto  "}>
             <div className="px-4 md:px-10 md:mx-auto mt-10 md:mt-0 flex flex-col justify-center items-start">
                 <div className="flex flex-col gap-2 md:gap-1 relative">
 

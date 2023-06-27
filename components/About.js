@@ -31,7 +31,7 @@ function About() {
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: false}}
                 transition={{duration: 1.2}}
-                className={"scroll-py-10 px-0 md:px-10"}
+                className={"scroll-py-10 px-0 md:px-10 backdrop-blur-md"}
             >
                 <h4 className={"text-2xl font-semibold pb-3 md:pb-4"}>Here is a little background</h4>
                 <p className={'text-sm max-w-md '}>
