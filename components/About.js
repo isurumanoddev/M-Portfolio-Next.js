@@ -1,11 +1,13 @@
 'use client'
 import {motion} from "framer-motion"
+import {Button} from "@mui/material";
+import {Download, Send} from "@mui/icons-material";
 
 function About() {
     return (
         <div
             className={"h-screen   mx-auto items-center relative flex flex-col text-center md:text-left md:flex-row max-w-5xl px-10 justify-evenly"}>
-            <h3 className={"absolute top-24 text-2xl uppercase text-center tracking-[20px]"}>About</h3>
+            <h3 className={"absolute  top-16 md:top-20 text-2xl uppercase text-center tracking-[20px]"}>About</h3>
 
             <motion.img
                 initial={{
@@ -34,16 +36,24 @@ function About() {
                 className={"scroll-py-10 px-0 md:px-10 backdrop-blur-md"}
             >
                 <h4 className={"text-2xl font-semibold pb-3 md:pb-4"}>Here is a little background</h4>
-                <p className={'text-sm max-w-md '}>
+                <p className={'text-sm max-w-lg '}>
                     Highly motivated, open-mined and detail-oriented
                     undergraduate software engineer. An adaptable quick learner,
                     a strong communicator and team player with a strong foundation in
                     computer science principles and passion for problem-solving to make a meaningful
                     contribution at a forward-thinking company. Skilled in developing efficient and intuitive solutions
-                    to complex problems, with experience in a variety of programming languages such as Python , Javascript
-                    , Java and technologies such as Django, NoSQL databases. Seeking to leverage my skills and knowledge to
+                    to complex problems, with experience in a variety of programming languages such as Python ,
+                    Javascript
+                    , Java and technologies such as Django, NoSQL databases. Seeking to leverage my skills and knowledge
+                    to
                     contribute to the success of a dynamic software development team
                 </p>
+                <div className="mt-3 flex flex-row gap-3 md:pt-6">
+                    <Button className="button ">Download Cv <Download/> </Button>
+                    {/*<Button id={"download__btn"} className="hidden lg:flex gap-3 text-xs bg-[#64FFDA] tracking-widest text-white border-none outline-none px-7 ">Download Cv <Download*/}
+                    {/*    fontSize={"small"}/></Button>*/}
+                </div>
+
 
             </motion.div>
 

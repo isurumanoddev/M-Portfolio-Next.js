@@ -5,6 +5,7 @@ import {Cursor, Typewriter, useTypewriter} from 'react-simple-typewriter'
 import {loadFull} from "tsparticles";
 import {Button, IconButton} from "@mui/material";
 import {Download, Send, GitHub, LinkedIn, Twitter} from "@mui/icons-material";
+import Link from "next/link";
 
 function Hero() {
     const particlesInit = useCallback(async engine => {
@@ -32,17 +33,17 @@ function Hero() {
             <div className="px-4 md:px-10 md:mx-auto mt-10 md:mt-0 flex flex-col justify-center items-start">
                 <div className="flex flex-col gap-2 md:gap-1 relative">
 
-                    <div className="text-[15px] md:text-[16px] lg:text-[18px] text-[#E76161] tracking-widest">hello, my
+                    <div className="text-[15px] md:text-[17px] lg:text-[20px] text-[#E76161] tracking-widest">hello, my
                         name is
                     </div>
 
 
-                    <div className="pb-1 pt-1 text-[40px] md:text-[50px]  lg:text-[65px] tracking-widest ">Isuru
+                    <div className="pb-1 pt-1 text-[40px] md:text-[50px]  lg:text-[65px] tracking-widest  ">Isuru
                         Senanayake
                     </div>
 
 
-                    <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px]">
+                    <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px] backdrop-blur-md">
                         <p>
                             <span>{text}</span>
                             <Cursor curorColor={"#E76161"}/>
@@ -50,7 +51,8 @@ function Hero() {
 
                     </div>
 
-                    <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4">I am a highly motivated and
+                    <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4 backdrop-blur-md">I am a
+                        highly motivated and
                         skilled<strong className="text-[#E76161]"> Fullstack Developer
                         </strong> currently pursuing <strong className="text-[#E76161]"> BSc in Software Engineering
                             .</strong>I have
@@ -62,8 +64,11 @@ function Hero() {
 
 
                 <div className="mt-3 flex flex-row gap-3 md:pt-6">
-                    <Button className="button ">Reach out to me <Send
-                        fontSize={"small"}/></Button>
+                    <Link href={"#contact"}>
+                        <Button className="button ">Reach out to me <Send
+                            fontSize={"small"}/></Button>
+                    </Link>
+
                     {/*<Button id={"download__btn"} className="hidden lg:flex gap-3 text-xs bg-[#64FFDA] tracking-widest text-white border-none outline-none px-7 ">Download Cv <Download*/}
                     {/*    fontSize={"small"}/></Button>*/}
                 </div>
@@ -88,59 +93,59 @@ function Hero() {
 
             </div>
 
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={{
+            {/*<Particles*/}
+            {/*    id="tsparticles"*/}
+            {/*    init={particlesInit}*/}
+            {/*    loaded={particlesLoaded}*/}
+            {/*    options={{*/}
 
-                    background: {
-                        color: {
-                            value: "",
-                        },
-                    }, fpsLimit: 120, interactivity: {
-                        events: {
-                            onClick: {
-                                enable: true, mode: "push",
-                            }, onHover: {
-                                enable: true, mode: "repulse",
-                            }, resize: true,
-                        }, modes: {
-                            push: {
-                                quantity: 4,
-                            }, repulse: {
-                                distance: 200, duration: 0.4,
-                            },
-                        },
-                    }, particles: {
-                        color: {
-                            value: "#E76161",
-                        },
+            {/*        background: {*/}
+            {/*            color: {*/}
+            {/*                value: "",*/}
+            {/*            },*/}
+            {/*        }, fpsLimit: 120, interactivity: {*/}
+            {/*            events: {*/}
+            {/*                onClick: {*/}
+            {/*                    enable: true, mode: "push",*/}
+            {/*                }, onHover: {*/}
+            {/*                    enable: true, mode: "repulse",*/}
+            {/*                }, resize: true,*/}
+            {/*            }, modes: {*/}
+            {/*                push: {*/}
+            {/*                    quantity: 4,*/}
+            {/*                }, repulse: {*/}
+            {/*                    distance: 200, duration: 0.4,*/}
+            {/*                },*/}
+            {/*            },*/}
+            {/*        }, particles: {*/}
+            {/*            color: {*/}
+            {/*                value: "#E76161",*/}
+            {/*            },*/}
 
-                        links: {
-                            color: "#E76161", distance: 150, enable: true, opacity: 0.2, width: 1,
-                        }, collisions: {
-                            enable: true,
-                        }, move: {
-                            direction: "none", enable: true, outModes: {
-                                default: "bounce",
-                            }, random: false, speed: 1, straight: false,
-                        }, number: {
-                            density: {
-                                enable: true, area: 1000,
-                            }, value: 80,
-                        }, opacity: {
-                            value: 0.4,
-                        }, shape: {
-                            type: "circle",
-                        }, size: {
-                            value: {min: 1, max: 5},
-                        },
-                    }, detectRetina: true
+            {/*            links: {*/}
+            {/*                color: "#E76161", distance: 150, enable: true, opacity: 0.4, width: 1,*/}
+            {/*            }, collisions: {*/}
+            {/*                enable: true,*/}
+            {/*            }, move: {*/}
+            {/*                direction: "none", enable: true, outModes: {*/}
+            {/*                    default: "bounce",*/}
+            {/*                }, random: false, speed: 1, straight: false,*/}
+            {/*            }, number: {*/}
+            {/*                density: {*/}
+            {/*                    enable: true, area: 1000,*/}
+            {/*                }, value: 80,*/}
+            {/*            }, opacity: {*/}
+            {/*                value: 0.6,*/}
+            {/*            }, shape: {*/}
+            {/*                type: "circle",*/}
+            {/*            }, size: {*/}
+            {/*                value: {min: 1, max: 5},*/}
+            {/*            },*/}
+            {/*        }, detectRetina: true*/}
 
 
-                }}
-            />
+            {/*    }}*/}
+            {/*/>*/}
         </div>
 
     );

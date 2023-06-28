@@ -4,7 +4,7 @@
 
 @layer components {
     .contactInput {
-        @apply focus:text-[#E76161]/80 hover:border-[#E76161]/60 backdrop-blur-md outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4  text-gray-300 placeholder-gray-500 transition-all w-full text-[14px] md:text-[16px] focus:border-[#E76161]
+        @apply focus:text-[#E76161]/80 hover:border-[#E76161]/60 backdrop-blur-md outline-none bg-slate-400/10 rounded-sm border-b-2 px-6 py-4  text-gray-300 placeholder-gray-500 transition-all w-full text-[14px] md:text-[16px] focus:border-[#E76161]
     }
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .button:hover {
-    background-color: rgba(153, 226, 230, 0.2) !important;
+    /*background-color: rgba(153, 226, 230, 0.2) !important;*/
     color: white !important;
 
 }
