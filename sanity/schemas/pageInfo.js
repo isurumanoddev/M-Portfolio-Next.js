@@ -12,10 +12,7 @@ export default {
       name: 'role',
       title: 'Role',
       type: 'string',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
+
     },
 
 
