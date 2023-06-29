@@ -41,7 +41,7 @@ function Contact() {
                     </div>
                     <div className={"flex items-center space-x-5 justify-center"}>
                         <Mail className={"text-[#E76161]"}/>
-                        <p className={"text-[16px]"}>isurmanod99@gmail.com</p>
+                        <p className={"text-[16px]"}>isurumanod99@gmail.com</p>
                     </div>
                     <div className={"flex items-center space-x-5 justify-center"}>
                         <Map className={"text-[#E76161]"}/>

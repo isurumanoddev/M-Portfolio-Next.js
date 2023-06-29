@@ -31,9 +31,9 @@ function Hero() {
     return (
         <div className={" h-screen px-4 flex flex-col justify-center max-w-6xl md:mx-auto  "}>
             <div className="px-4 md:px-10 md:mx-auto mt-10 md:mt-0 flex flex-col justify-center items-start">
-                <div className="flex flex-col gap-2 md:gap-1 relative">
+                <div className="flex flex-col gap-2 md:gap-1 relative z-20">
 
-                    <div className="text-[15px] md:text-[17px] lg:text-[20px] text-[#E76161] tracking-widest">hello, my
+                    <div className="backdrop-blur-md w-fit text-[15px] md:text-[17px] lg:text-[20px] text-[#E76161] tracking-widest">hello, my
                         name is
                     </div>
 
@@ -43,7 +43,7 @@ function Hero() {
                     </div>
 
 
-                    <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px] backdrop-blur-md">
+                    <div className="h-auto md:h-[60px] text-[24px] md:text-[35px] lg:text-[42px]">
                         <p>
                             <span>{text}</span>
                             <Cursor curorColor={"#E76161"}/>
@@ -51,7 +51,7 @@ function Hero() {
 
                     </div>
 
-                    <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4 backdrop-blur-md">I am a
+                    <p className="text-[14px] md:text-[16px] w-3/4  md:w-1/2 lg:w-2/5 pb-4 backdrop-blur-lg">I am a
                         highly motivated and
                         skilled<strong className="text-[#E76161]"> Fullstack Developer
                         </strong> currently pursuing <strong className="text-[#E76161]"> BSc in Software Engineering
@@ -63,7 +63,7 @@ function Hero() {
                 </div>
 
 
-                <div className="mt-3 flex flex-row gap-3 md:pt-6">
+                <div className="mt-3 flex flex-row gap-3 md:pt-6 z-20">
                     <Link href={"#contact"}>
                         <Button className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
@@ -74,17 +74,17 @@ function Hero() {
                 </div>
 
 
-                <div className="hidden lg:flex md:flex-col gap-4 absolute right-10 top-25 ">
+                <div className="hidden lg:flex md:flex-col gap-4 absolute right-10 top-25 z-0 ">
                     <IconButton target="_blank" href={"https://github.com/isurumanoddev"}
-                                className={"text-white"}>
+                                className={"text-white hover:text-[#E76161] transition"}>
                         <GitHub fontSize={"large"}/>
                     </IconButton>
                     <IconButton href={"https://github.com/isurumanoddev"} target="_blank"
-                                className={"text-white"}>
+                                className={"text-white hover:text-[#E76161] transition"}>
                         <LinkedIn fontSize={"large"}/>
                     </IconButton>
                     <IconButton href={"https://github.com/isurumanoddev"} target="_blank"
-                                className={"text-white"}>
+                                className={"text-white hover:text-[#E76161] transition"}>
                         <Twitter fontSize={"large"}/>
                     </IconButton>
 

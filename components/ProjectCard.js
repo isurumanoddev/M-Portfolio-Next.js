@@ -22,17 +22,17 @@ function ProjectCard() {
                 viewport={{once: false}}
 
 
-                className={"px-1 md:px-10 flex flex-col gap-2 pb-3 text-center"}>
+                className={"px-1 md:px-10 flex flex-col gap-3 pb-3 text-center"}>
                 <h4 className={"text-lg lg:text-[20px] tracking-[10px]"}>Netflix Clone</h4>
 
-                <div className={" space-y-3 text-center text-[14px]"}>
+                <div className={" text-center text-[14px]"}>
                     A fully functional E-commerce site built with React.js,
                     React Router, Context API, Stripe, Firebase, and Google Auth.
                     Experience a seamless online shopping experience with this Amazon clone.
 
                 </div>
 
-                <div className={"flex flex-row flex-wrap space-x-2 space-y-2 px-2"}>
+                <div className={"flex flex-row flex-wrap gap-2 px-2"}>
 
 
                     <p className={"px-2 py-1 font-semibold text-[15px] bg-[#E76161]/80 text-white rounded-full w-fit"}>Next js</p>

@@ -87,6 +87,8 @@ body {
 .button:hover {
     /*background-color: rgba(153, 226, 230, 0.2) !important;*/
     color: white !important;
+     border: 1.5px solid white!important;
+    transform: scale(1.01);
 
 }
 .contactInput {
