@@ -5,9 +5,9 @@ import ProjectCard from "@/components/ProjectCard";
 import {fetchProjects} from "@/utils/fetchProjects";
 
 
-async function Projects() {
+async function Projects({projects}) {
 
-
+console.log(":projects",projects[0].image)
 
     return (
         <motion.div
@@ -19,18 +19,18 @@ async function Projects() {
             <h3 className={"absolute uppercase top-14 text-2xl text-center tracking-[20px]"}>Projects</h3>
 
 
-            {/*<div*/}
-            {/*    className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>*/}
+            <div
+                className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
 
-            {/*    {*/}
+                {
 
-            {/*        projects?.map((project) => (*/}
-            {/*            <ProjectCard key={project._id} name={project.title} summary={project.summary}*/}
-            {/*                         github={project.github}*/}
-            {/*                         live={project.live}/>*/}
-            {/*        ))*/}
-            {/*    }*/}
-            {/*</div>*/}
+                    projects?.map((project) => (
+                        <ProjectCard key={project._id} name={project.title} summary={project.summary}
+                                     github={project.github}
+                                     live={project.live}/>
+                    ))
+                }
+            </div>
 
         </motion.div>
     );

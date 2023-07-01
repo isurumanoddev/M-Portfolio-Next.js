@@ -9,7 +9,7 @@ import {fetchSkills} from "@/utils/fetchSkills";
 
 
 async function Skills({skills}) {
-    console.log(skills)
+
 
 
 
