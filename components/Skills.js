@@ -2,8 +2,17 @@
 
 import {motion} from "framer-motion"
 import Skill from "@/components/Skill";
+import {fetchProjects} from "@/utils/fetchProjects";
+import ProjectCard from "@/components/ProjectCard";
+import React, {useEffect, useState} from "react";
+import {fetchSkills} from "@/utils/fetchSkills";
 
-function Skills() {
+
+async function Skills({skills}) {
+    console.log(skills)
+
+
+
     return (
         <motion.div
             initial={{opacity: 0}}
@@ -15,22 +24,13 @@ function Skills() {
             <h3 className={"absolute top-[100px] text-2xl uppercase text-center tracking-[20px]"}>Skills</h3>
 
             <div className={" grid grid-cols-4 gap-5 backdrop-blur-md "}>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill directionLeft/>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+
+                {
+
+                    skills?.map((skill) => (
+                        <Skill key={skill._id} image={skill.imageUrl}/>
+                    ))
+                }
 
             </div>
 

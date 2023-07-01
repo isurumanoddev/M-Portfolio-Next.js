@@ -2,8 +2,9 @@
 import {motion} from "framer-motion"
 import {Button} from "@mui/material";
 import {Article, GitHub} from "@mui/icons-material";
+import {urlFor} from "@/sanityConfig";
 
-function ProjectCard() {
+function ProjectCard({name,summary,live,github,image}) {
     return (
         <article
             className={"bg-[#131b30] backdrop-blur-md snap-center w-full md:w-[500px]  xl:w-[600px] h-full  flex flex-col items-center space-y-4 flex-shrink-0"}>
@@ -13,7 +14,7 @@ function ProjectCard() {
                 transition={{duration: 1.2}}
                 viewport={{once: false}}
                 className={"rounded-md overflow-hidden object-cover w-[300px] md:w-[350px] lg:w-[450px] p-1 "}
-                src="https://camo.githubusercontent.com/92509a812a314b7d6084f4156dbe118f15248c7617ac7306c13bd14117a0be41/68747470733a2f2f692e6962622e636f2f64476264596a572f73637265656e6361702d312e6a7067"
+
                 alt=""/>
             <motion.div
                   initial={{y: 60, opacity: 0}}
@@ -23,12 +24,10 @@ function ProjectCard() {
 
 
                 className={"px-1 md:px-10 flex flex-col gap-3 pb-3 text-center"}>
-                <h4 className={"text-lg lg:text-[20px] tracking-[10px]"}>Netflix Clone</h4>
+                <h4 className={"text-lg lg:text-[20px] tracking-[10px]"}>{name}</h4>
 
                 <div className={" text-center text-[14px]"}>
-                    A fully functional E-commerce site built with React.js,
-                    React Router, Context API, Stripe, Firebase, and Google Auth.
-                    Experience a seamless online shopping experience with this Amazon clone.
+                    {summary}
 
                 </div>
 
@@ -49,9 +48,9 @@ function ProjectCard() {
                 </div>
                 <div className={"flex flex-row justify-center items-center gap-3 "}>
                     <Button
-                        className={'button3'}>Github <GitHub/></Button>
+                        href={github} className={'button3'}>Github <GitHub/></Button>
                     <Button
-                        className={'button3'}>Live <Article/></Button>
+                       href={live}  className={'button3'}>Live <Article/></Button>
                 </div>
 
             </motion.div>

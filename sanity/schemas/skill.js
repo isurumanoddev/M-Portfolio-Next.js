@@ -9,12 +9,11 @@ export default {
             description: 'Title of skill',
             type: 'string',
         },
-        {
-            name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true, },
+         {
+            name: 'imageUrl',
+            title: 'imageUrl',
+            type: 'url',
+
         },
 
 

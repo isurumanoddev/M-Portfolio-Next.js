@@ -1,9 +1,14 @@
 'use client'
 import {motion} from "framer-motion"
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ProjectCard from "@/components/ProjectCard";
+import {fetchProjects} from "@/utils/fetchProjects";
 
-function Projects() {
+
+async function Projects() {
+
+
+
     return (
         <motion.div
             initial={{opacity: 0}}
@@ -14,13 +19,18 @@ function Projects() {
             <h3 className={"absolute uppercase top-14 text-2xl text-center tracking-[20px]"}>Projects</h3>
 
 
-            <div className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-            </div>
+            {/*<div*/}
+            {/*    className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>*/}
+
+            {/*    {*/}
+
+            {/*        projects?.map((project) => (*/}
+            {/*            <ProjectCard key={project._id} name={project.title} summary={project.summary}*/}
+            {/*                         github={project.github}*/}
+            {/*                         live={project.live}/>*/}
+            {/*        ))*/}
+            {/*    }*/}
+            {/*</div>*/}
 
         </motion.div>
     );

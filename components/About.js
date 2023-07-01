@@ -4,6 +4,19 @@ import {Button} from "@mui/material";
 import {Download, Send} from "@mui/icons-material";
 
 function About() {
+        const downloadCV = () => {
+        const downloadUrl = 'https://drive.google.com/file/d/1flr9WH7MANldPQxajPZ_NpKwEGe09McJ/view?usp=drive_link'; // Replace with the actual Google Drive file download link
+
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+
+        // Set the file name for the download
+        link.download = 'cv.pdf'; // Replace 'cv.pdf' with the desired file name
+
+        // Simulate a click event to trigger the download
+        link.click();
+    }
     return (
         <div
             className={"h-screen   mx-auto items-center relative flex flex-col text-center md:text-left md:flex-row max-w-5xl px-10 justify-evenly"}>
@@ -36,20 +49,19 @@ function About() {
                 className={"scroll-py-10 px-0 md:px-10 backdrop-blur-md"}
             >
                 <h4 className={"text-2xl font-semibold pb-3 md:pb-4"}>Here is a little background</h4>
-                <p className={'text-sm max-w-lg '}>
-                    Highly motivated, open-mined and detail-oriented
-                    undergraduate software engineer. An adaptable quick learner,
-                    a strong communicator and team player with a strong foundation in
-                    computer science principles and passion for problem-solving to make a meaningful
-                    contribution at a forward-thinking company. Skilled in developing efficient and intuitive solutions
-                    to complex problems, with experience in a variety of programming languages such as Python ,
-                    Javascript
-                    , Java and technologies such as Django, NoSQL databases. Seeking to leverage my skills and knowledge
-                    to
-                    contribute to the success of a dynamic software development team
+                <p className={'text-sm max-w-xl md:text-lg '}>
+
+                    Greetings! 🌟 My name is Isuru  and I am a driven and enthusiastic Full Stack Software Developer 🚀.
+                    Currently, I am pursuing my Third year of Software Engineering offered from Cardiff
+                    Metropolitan University ( Associated with ICBT ). With extensive experience in building Web applications, I specialize in JavaScript / Reactjs / Nodejs / Next js / Django
+                    and various other cool libraries and frameworks.
+                    My passion lies in solving complex problems using programming and I am deeply interested in Software Engineering,
+                    Web Development, Data Structures, and Algorithms
+                    . I strongly believe in the power of teamwork and I am always eager
+                    to collaborate with like-minded individuals. 🤝 So, feel free to reach out to me and let's work together to create some amazing projects! 🌟
                 </p>
                 <div className="mt-3 flex flex-row gap-3 md:pt-6">
-                    <Button className="button ">Download Cv <Download/> </Button>
+                    <Button className="button " onClick={downloadCV}>Download Cv <Download/> </Button>
                     {/*<Button id={"download__btn"} className="hidden lg:flex gap-3 text-xs bg-[#64FFDA] tracking-widest text-white border-none outline-none px-7 ">Download Cv <Download*/}
                     {/*    fontSize={"small"}/></Button>*/}
                 </div>
