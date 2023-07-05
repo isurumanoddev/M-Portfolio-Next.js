@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import {collection, getDocs} from "firebase/firestore";
 
 
-async function Projects({projects}) {
+async function Projects() {
 
 
 
@@ -26,6 +26,7 @@ async function Projects({projects}) {
 
                 {/*    projects?.map((project) => (*/}
                 {/*        <ProjectCard*/}
+                {/*            projectId={project.data?.name}*/}
                 {/*                     name={project.data?.name}*/}
                 {/*        description={project.data?.description}*/}
                 {/*        image={project.data?.image}*/}

@@ -36,10 +36,10 @@ const skills =await fetchSkills()
                 <About/>
             </section>
             <section id={"skills"} className={"snap-center"}>
-                <Skills skills={skills} />
+                <Skills  />
             </section>
             <section id={"projects"} className={"snap-center"}>
-                <Projects projects={projects}/>
+                <Projects />
             </section>
             <section id={"contact"} className={"snap-center"}>
                 <Contact/>
