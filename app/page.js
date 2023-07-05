@@ -5,15 +5,16 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Hero from "@/components/Hero";
+import getBasePath from "@/lib/getBasePath";
 
 const fetchProjects = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`,{cache:"force-cache"});
+    const res = await fetch(`${getBasePath()}/api/projects`,{cache:"force-cache"});
 
     const data = await res.json()
     return data.projects;
 }
 const fetchSkills = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/skills`);
+    const res = await fetch(`${getBasePath()}/api/skills`);
 
     const data = await res.json()
 

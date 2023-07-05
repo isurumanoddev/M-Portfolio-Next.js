@@ -6,8 +6,7 @@ import {collection, getDocs} from "firebase/firestore";
 
 
 async function Projects({projects}) {
-
-
+console.log("Results : ",projects)
 
     return (
         <motion.div
@@ -27,12 +26,12 @@ async function Projects({projects}) {
                     projects?.map((project) => (
                         <ProjectCard
                             key={project._id}
-                                     name={project.data?.name}
-                        description={project.data?.description}
-                        image={project.data?.image}
-                        github={project.data?.github}
-                        live={project.data?.live}
-                        tech={project.data?.tech}/>
+                            name={project.data?.title}
+                            description={project.data?.summary}
+                            image={project.data?.image}
+                            github={project.data?.github}
+                            live={project.data?.live}
+                            tech={project.data?.tech}/>
                     ))
                 }
             </div>
