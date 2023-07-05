@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import {collection, getDocs} from "firebase/firestore";
 
 
-async function Projects() {
+async function Projects({projects}) {
 
 
 
@@ -22,19 +22,19 @@ async function Projects() {
             <div
                 className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
 
-                {/*{*/}
+                {
 
-                {/*    projects?.map((project) => (*/}
-                {/*        <ProjectCard*/}
-                {/*            projectId={project.data?.name}*/}
-                {/*                     name={project.data?.name}*/}
-                {/*        description={project.data?.description}*/}
-                {/*        image={project.data?.image}*/}
-                {/*        github={project.data?.github}*/}
-                {/*        live={project.data?.live}*/}
-                {/*        tech={project.data?.tech}/>*/}
-                {/*    ))*/}
-                {/*}*/}
+                    projects?.map((project) => (
+                        <ProjectCard
+                            key={project._id}
+                                     name={project.data?.name}
+                        description={project.data?.description}
+                        image={project.data?.image}
+                        github={project.data?.github}
+                        live={project.data?.live}
+                        tech={project.data?.tech}/>
+                    ))
+                }
             </div>
 
         </motion.div>

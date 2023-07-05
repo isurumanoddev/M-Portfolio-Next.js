@@ -16,7 +16,7 @@ function ProjectCard({name, description, live, github, image}) {
                     transition={{duration: 1.2}}
                     viewport={{once: false}}
                     className={"rounded-md overflow-hidden object-cover w-[300px] md:w-[350px] lg:w-[450px] p-1 "}
-                    src={image}
+                    src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSc0E_-ezcw1juku7x_q9rIVtGDEFGDsZnA&usqp=CAU"}
                 />
 
             <motion.div

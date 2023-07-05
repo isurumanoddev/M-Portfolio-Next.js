@@ -27,7 +27,7 @@ const skills =await fetchSkills()
 
     return (
         <div
-            className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin"}>
+            className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-red-700 scrollbar-thin"}>
             {/*<Header/>*/}
             <section id={"hero"} className={"snap-center"}>
                 <Hero/>
@@ -36,10 +36,10 @@ const skills =await fetchSkills()
                 <About/>
             </section>
             <section id={"skills"} className={"snap-center"}>
-                <Skills  />
+                <Skills skills={skills} />
             </section>
             <section id={"projects"} className={"snap-center"}>
-                <Projects />
+                <Projects projects={projects} />
             </section>
             <section id={"contact"} className={"snap-center"}>
                 <Contact/>
