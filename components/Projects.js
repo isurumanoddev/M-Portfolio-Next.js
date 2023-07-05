@@ -2,12 +2,12 @@
 import {motion} from "framer-motion"
 import React, {useEffect, useState} from "react";
 import ProjectCard from "@/components/ProjectCard";
-import {fetchProjects} from "@/utils/fetchProjects";
+import {collection, getDocs} from "firebase/firestore";
 
 
-async function Projects({projects}) {
+async function Projects() {
 
-console.log(":projects",projects[0].image)
+
 
     return (
         <motion.div
@@ -25,9 +25,13 @@ console.log(":projects",projects[0].image)
                 {
 
                     projects?.map((project) => (
-                        <ProjectCard key={project._id} name={project.title} summary={project.summary}
-                                     github={project.github}
-                                     live={project.live}/>
+                        <ProjectCard
+                                     name={project.data.name}
+                        description={project.data.description}
+                        image={project.data.image}
+                        github={project.data.github}
+                        live={project.data.live}
+                        tech={project.data.tech}/>
                     ))
                 }
             </div>

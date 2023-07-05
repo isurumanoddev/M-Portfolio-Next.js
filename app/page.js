@@ -29,19 +29,19 @@ const skills =await fetchSkills()
         <div
             className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin"}>
             {/*<Header/>*/}
-            <section id={"hero"} className={""}>
+            <section id={"hero"} className={"snap-center"}>
                 <Hero/>
             </section>
-            <section id={"about"} className={""}>
+            <section id={"about"} className={"snap-center"}>
                 <About/>
             </section>
-            <section id={"skills"} className={""}>
+            <section id={"skills"} className={"snap-center"}>
                 <Skills skills={skills} />
             </section>
-            <section id={"projects"} className={""}>
+            <section id={"projects"} className={"snap-center"}>
                 <Projects projects={projects}/>
             </section>
-            <section id={"contact"} className={""}>
+            <section id={"contact"} className={"snap-center"}>
                 <Contact/>
             </section>
 
