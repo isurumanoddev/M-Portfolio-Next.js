@@ -5,7 +5,7 @@ import {Download, Send} from "@mui/icons-material";
 
 function About() {
         const downloadCV = () => {
-        const downloadUrl = 'https://drive.google.com/file/d/1flr9WH7MANldPQxajPZ_NpKwEGe09McJ/view?usp=drive_link'; // Replace with the actual Google Drive file download link
+        const downloadUrl = 'https://drive.google.com/file/d/1_qQKKZ92l5Vq637_nnA5NRcC6tjgyi14/view?usp=sharing'; // Replace with the actual Google Drive file download link
 
         // Create a temporary anchor element
         const link = document.createElement('a');
