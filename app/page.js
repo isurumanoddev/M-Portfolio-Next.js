@@ -47,6 +47,7 @@ const skills =await fetchSkills()
             </section>
 
 
+
         </div>
     )
 }

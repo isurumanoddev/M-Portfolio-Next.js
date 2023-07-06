@@ -2,10 +2,9 @@
 
 import {motion} from "framer-motion"
 import Skill from "@/components/Skill";
-import {fetchProjects} from "@/utils/fetchProjects";
-import ProjectCard from "@/components/ProjectCard";
-import React, {useEffect, useState} from "react";
-import {fetchSkills} from "@/utils/fetchSkills";
+
+import React from "react";
+
 
 
 async function Skills({skills}) {

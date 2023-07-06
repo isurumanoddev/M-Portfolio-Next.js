@@ -1,12 +1,10 @@
 'use client'
 import {motion} from "framer-motion"
-import React, {useEffect, useState} from "react";
+import React from "react";
 import ProjectCard from "@/components/ProjectCard";
-import {collection, getDocs} from "firebase/firestore";
 
 
 async function Projects({projects}) {
-console.log("Results : ",projects)
 
     return (
         <motion.div
@@ -23,15 +21,15 @@ console.log("Results : ",projects)
 
                 {
 
-                    projects?.map((project) => (
+                     projects.map((project) => (
                         <ProjectCard
                             key={project._id}
-                            name={project.data?.title}
-                            description={project.data?.summary}
-                            image={project.data?.image}
-                            github={project.data?.github}
-                            live={project.data?.live}
-                            tech={project.data?.tech}/>
+                            name={project.title}
+                            description={project.summary}
+                            image={project.image}
+                            github={project.github}
+                            live={project.live}
+                            tech={project.tech}/>
                     ))
                 }
             </div>

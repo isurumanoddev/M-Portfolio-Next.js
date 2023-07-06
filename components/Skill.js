@@ -1,8 +1,8 @@
 'use client'
 import {motion} from "framer-motion"
-import {urlFor} from "@/sanityConfig";
 
-function Skill({directionLeft,name,image}) {
+
+function Skill({directionLeft,image}) {
     return (
         <div className={"group relative flex cursor-pointer "}>
             <motion.img
