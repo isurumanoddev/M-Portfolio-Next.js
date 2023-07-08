@@ -8,7 +8,6 @@ import React from "react";
 
 
 async function Skills({skills}) {
-    console.log(skills)
 
 
 
@@ -28,7 +27,7 @@ async function Skills({skills}) {
                 {
 
                     skills["skills"]?.map((skill) => (
-                        <Skill key={skill._id} image={skill.imageUrl}/>
+                        <Skill key={skill?._id} image={skill?.imageUrl}/>
                     ))
                 }
 

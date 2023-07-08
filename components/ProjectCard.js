@@ -6,8 +6,7 @@ import {urlFor} from "@/sanityConfig";
 
 
 function ProjectCard({name, description, live, github, image}) {
-        // console.log("name ",name)
-        // console.log("image ",image)
+
 
     return (
         <article

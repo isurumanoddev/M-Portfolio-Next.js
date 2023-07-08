@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 
 async function Projects({projects}) {
-    const projectData = projects["projects"]
+
 
     return (
         <motion.div
@@ -21,15 +21,15 @@ async function Projects({projects}) {
                 className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
 
                 {
-                     projectData.map((project) => (
+                     projects["projects"]?.map((project) => (
                         <ProjectCard
-                            key={project._id}
-                            name={project.title}
-                            description={project.summary}
-                            image={project.image}
-                            github={project.github}
-                            live={project.live}
-                            tech={project.tech}/>
+                            key={project?._id}
+                            name={project?.title}
+                            description={project?.summary}
+                            image={project?.image}
+                            github={project?.github}
+                            live={project?.live}
+                            tech={project?.tech}/>
                     ))
                 }
             </div>
