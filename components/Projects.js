@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 
 async function Projects({projects}) {
+    const projectData = projects["projects"]
 
     return (
         <motion.div
@@ -20,8 +21,7 @@ async function Projects({projects}) {
                 className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
 
                 {
-
-                     projects.map((project) => (
+                     projectData.map((project) => (
                         <ProjectCard
                             key={project._id}
                             name={project.title}

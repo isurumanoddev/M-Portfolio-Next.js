@@ -5,26 +5,43 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Hero from "@/components/Hero";
+
+
+
 import getBasePath from "@/lib/getBasePath";
+import axios from "axios";
 
-const fetchProjects = async () => {
-    const res = await fetch(`${getBasePath()}/api/projects`,{cache:"force-cache"});
 
-    const data = await res.json()
-    return data.projects;
+async function fetchProject() {
+  try {
+    const response =  await axios.get(`${getBasePath()}/api/projects`);
+
+    return response.data
+  } catch (error) {
+    console.error(error);
+  }
 }
-const fetchSkills = async () => {
-    const res = await fetch(`${getBasePath()}/api/skills`);
+async function fetchSkills() {
+  try {
+     const res = await axios.get(`${getBasePath()}/api/skills`);
 
-    const data = await res.json()
-
-    return data.skills
+    return res.data
+  } catch (error) {
+    console.error(error);
+  }
 }
+
 
 
 export default async function Home() {
-const projects =await fetchProjects()
+const projects =await fetchProject()
 const skills =await fetchSkills()
+
+
+
+
+
+
 
     return (
         <div
@@ -37,10 +54,10 @@ const skills =await fetchSkills()
                 <About/>
             </section>
             <section id={"skills"} className={"snap-center"}>
-                <Skills skills={skills} />
+                <Skills skills={skills}  />
             </section>
             <section id={"projects"} className={"snap-center"}>
-                <Projects projects={projects} />
+                <Projects  projects={projects} />
             </section>
             <section id={"contact"} className={"snap-center"}>
                 <Contact/>
