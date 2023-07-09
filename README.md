@@ -1,3 +1,20 @@
+# Next js Portforlio
+
+
+# Technologies used in developing your portfolio website:
+
+React: A popular JavaScript library for building user interfaces.
+
+Next.js: A framework for server-side rendering and building React applications.
+
+Tailwind CSS: A utility-first CSS framework for creating modern and responsive designs.
+
+Sanity: A headless CMS (Content Management System) that allows you to easily manage and update your website's content.
+
+Framer Motion: A library for creating smooth and interactive animations in React.
+
+JavaScript: The programming language that powers the website's functionality.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
