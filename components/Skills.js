@@ -24,12 +24,12 @@ async function Skills({skills}) {
 
             <div className={" grid grid-cols-4 gap-5 backdrop-blur-md "}>
 
-                {
+                {/*{*/}
 
-                    skills["skills"]?.map((skill) => (
-                        <Skill key={skill?._id} image={skill?.imageUrl}/>
-                    ))
-                }
+                {/*    skills["skills"]?.map((skill) => (*/}
+                {/*        <Skill key={skill?._id} image={skill?.imageUrl}/>*/}
+                {/*    ))*/}
+                {/*}*/}
 
             </div>
 

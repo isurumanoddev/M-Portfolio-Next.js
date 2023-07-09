@@ -1,11 +1,15 @@
 import 'server-only'
 import getBasePath from "@/lib/getBasePath";
+import axios from "axios";
 
 
 export const fetchSkills = async () => {
-    const res = await fetch(`${getBasePath()}/api/skills`);
 
-    const data = await res.json()
+    try {
+        const res = await axios.get(`${getBasePath()}/api/skills`, {next: {revalidate: 10}});
 
-    return data.skills
+        return res.data
+    } catch (error) {
+        console.error(error);
+    }
 }

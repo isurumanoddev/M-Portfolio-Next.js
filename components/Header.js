@@ -22,12 +22,12 @@ function Header() {
             >
 
                 <div className={"border-b-2 border-b-[#E76161]" }><Link
-                    className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#hero"><p className={"hidden sm:flex"}>Home </p> <Home className={"sm:hidden"}/></Link></div>
-                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#about"><p className={"hidden sm:flex"}>About </p> <More className={"sm:hidden"}/></Link></div>
-                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#skills"><p className={"hidden sm:flex"}>Skills </p> <Psychology className={"sm:hidden"}/></Link></div>
-                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#projects"><p className={"hidden sm:flex"}>Projects </p> <Work className={"sm:hidden"}/></Link>
+                    className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#hero"><p className={"text-[10px] sm:text-[15px]"}>Home </p>{/* <Home className={"flex sm:hidden"}/> */} </Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#about"><p className={"text-[10px] sm:text-[15px]"}>About </p>{/* <More className={"flex sm:hidden"}/> */} </Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#skills"><p className={"text-[10px] sm:text-[15px]"}>Skills </p>{/* <Psychology className={"flex sm:hidden"}/> */} </Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#projects"><p className={"text-[10px] sm:text-[15px]"}>Projects </p>{/* <Work className={"flex sm:hidden"}/> */} </Link>
                 </div>
-                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#contact"><p className={"hidden sm:flex"}>Contact </p> <Message className={"sm:hidden"}/></Link></div>
+                <div className={""}><Link className={" text-sm transition duration-150 hover:text-[#E76161]"} href="#contact"><p className={"text-[10px] sm:text-[15px]"}>Contact </p>{/* <Message className={"flex sm:hidden"}/> */} </Link></div>
 
             </motion.div>
         </header>

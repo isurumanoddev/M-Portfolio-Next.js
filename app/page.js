@@ -11,8 +11,9 @@ import Hero from "@/components/Hero";
 import getBasePath from "@/lib/getBasePath";
 import axios from "axios";
 
+export const dynamic = 'force-'
 
-async function fetchProject() {
+async function fetchProjects() {
   try {
     const response =  await axios.get(`${getBasePath()}/api/projects`);
 
@@ -32,11 +33,11 @@ async function fetchSkills() {
 }
 
 
-
 export default async function Home() {
-const projects =await fetchProject()
-const skills =await fetchSkills()
 
+    const {projects} = await fetchProjects();
+    const skills = await fetchSkills();
+    // console.log("projects : ",projects)
 
 
 
@@ -47,19 +48,19 @@ const skills =await fetchSkills()
         <div
             className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-red-700 scrollbar-thin"}>
             {/*<Header/>*/}
-            <section id={"hero"} className={"snap-center"}>
+            <section id={"hero"} className={""}>
                 <Hero/>
             </section>
-            <section id={"about"} className={"snap-center"}>
+            <section id={"about"} className={""}>
                 <About/>
             </section>
-            <section id={"skills"} className={"snap-center"}>
-                <Skills skills={skills}  />
+            <section id={"skills"} className={""}>
+                <Skills   />
             </section>
-            <section id={"projects"} className={"snap-center"}>
+            <section id={"projects"} className={""}>
                 <Projects  projects={projects} />
             </section>
-            <section id={"contact"} className={"snap-center"}>
+            <section id={"contact"} className={""}>
                 <Contact/>
             </section>
 

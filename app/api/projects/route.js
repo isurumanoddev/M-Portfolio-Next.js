@@ -13,5 +13,5 @@ export async function GET(req, res) {
     const projects = await sanityClient.fetch(query)
 
 
-    return NextResponse.json({projects})
+    return new Response(JSON.stringify(projects))
 }
